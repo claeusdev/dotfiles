@@ -34,4 +34,15 @@ packer.startup(function(use)
 
   use "akinsho/nvim-bufferline.lua"
   use "norcalli/nvim-colorizer.lua"
+
+  use {"iamcco/markdown-preview.nvim", run = 'cd app && yarn intall', cmd = "MarkdownPreview"}
+
+  -- Ruby/Rails
+  use "tpope/vim-bundler"
+  use "tpope/vim-rails"
+  use "tpope/vim-ragtag"
+  use "tpope/vim-repeat"
+
+  -- Golang
+  use "fatih/vim-go"
 end)
