@@ -1,0 +1,9 @@
+[color]
+	ui = true
+[user]
+	name = Nana Adjei Manu
+	email = claeusdev@gmail.com
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
