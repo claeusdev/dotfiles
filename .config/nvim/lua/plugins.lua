@@ -35,7 +35,8 @@ packer.startup(function(use)
   use "akinsho/nvim-bufferline.lua"
   use "norcalli/nvim-colorizer.lua"
 
-  use {"iamcco/markdown-preview.nvim", run = 'cd app && yarn intall', cmd = "MarkdownPreview"}
+  use "glepnir/lspsaga.nvim"
+  use { "iamcco/markdown-preview.nvim", run = 'cd app && yarn intall', cmd = "MarkdownPreview" }
 
   -- Ruby/Rails
   use "tpope/vim-bundler"
@@ -45,4 +46,16 @@ packer.startup(function(use)
 
   -- Golang
   use "fatih/vim-go"
+
+  -- Prettier
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "MunifTanjim/prettier.nvim"
+
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+  use "dinhhuy258/git.nvim"
+
+  -- Mason setup to get and install other lsp servers
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
 end)
