@@ -43,6 +43,7 @@ packer.startup(function(use)
   use "tpope/vim-rails"
   use "tpope/vim-ragtag"
   use "tpope/vim-repeat"
+  use "tpope/vim-endwise"
 
   -- Golang
   use "fatih/vim-go"
