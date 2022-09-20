@@ -107,16 +107,17 @@ alias python="python3"
 alias oss="cd ~/workspaces/oss"
 alias wks="cd ~/workspaces"
 
+# start TMUX IDE
+alias ide="~/./tmuxlaunch.sh"
 # HA related stuff
 alias has="cd ~/work/ha && yarn nx run tokamak:start"
 alias haw="cd ~/work/ha && yarn nx run tokamak:watch-client"
-
 
 # GIT aliasing
 # 
 alias gs="git status"
 alias gco="git checkout"
-alias gcob="git checkout -b"
+alias gcb="git checkout -b"
 alias gc="git commit"
 alias gp="git pull"
 alias gpo="git push --set-upstream origin"
