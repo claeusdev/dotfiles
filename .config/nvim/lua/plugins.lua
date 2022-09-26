@@ -59,4 +59,7 @@ packer.startup(function(use)
   -- Mason setup to get and install other lsp servers
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
+
+  -- Github co-pilot
+  use "github/copilot.vim"
 end)
