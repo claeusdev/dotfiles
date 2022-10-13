@@ -5,8 +5,8 @@ lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'solarized_dark',
-    section_separators = { left = '?', right = '?' },
-    component_separators = { left = '?', right = '?' },
+    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
     disabled_filetypes = {}
   },
   sections = {
@@ -18,8 +18,8 @@ lualine.setup {
       path = 0 -- 0 = just filename, 1 = relative path, 2 = absolute path
     } },
     lualine_x = {
-      { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = '? ', warn = '? ', info = '? ',
-        hint = '? ' } },
+      { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = ' ', warn = ' ', info = ' ',
+        hint = ' ' } },
       'encoding',
       'filetype'
     },
