@@ -1,8 +1,8 @@
 require "nvim-treesitter.configs".setup(
   {
     highlight = {
-      enable = true,
-      disable = {}
+      enable = true
+
     },
     indent = {
       enable = true,

@@ -9,10 +9,8 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use "wbthomason/packer.nvim"
   use "L3MON4D3/LuaSnip"
-  use {
-    "svrana/neosolarized.nvim",
-    requires = { "tjdevries/colorbuddy.nvim" }
-  }
+  use "tjdevries/colorbuddy.nvim"
+  use "chriskempson/base16-vim"
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -22,11 +20,12 @@ packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp" -- nvim-cmp source for neovim built-in lsp
   use "hrsh7th/nvim-cmp" -- completion
   use "neovim/nvim-lspconfig" -- lsp
+  use "windwp/nvim-autopairs"
+  use "windwp/nvim-ts-autotag"
+
   use {
     "nvim-treesitter/nvim-treesitter", run = ":TSUpdate"
   }
-  use "windwp/nvim-autopairs"
-  use "windwp/nvim-ts-autotag"
 
   use "nvim-lua/plenary.nvim" -- Common Utilities
   use "nvim-telescope/telescope.nvim"
