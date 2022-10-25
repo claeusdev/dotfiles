@@ -15,6 +15,7 @@ packer.startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   } --statuline
+  use 'tpope/vim-fugitive'
   use "onsails/lspkind-nvim" --- vscode-like pictograms
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-nvim-lsp" -- nvim-cmp source for neovim built-in lsp
