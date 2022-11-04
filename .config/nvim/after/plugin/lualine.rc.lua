@@ -1,10 +1,29 @@
 local status, lualine = pcall(require, "lualine")
+local lualine_base16 = require("lualine.themes.base16")
 if (not status) then return end
 
+local colors = {
+  blue = "#65D1FF",
+  green = "#3EFFDC",
+  violet = "#FF61EF",
+  yellow = "#FFDA7B",
+  black = "#000000"
+}
+
+lualine_base16.normal.a.bg = colors.blue
+lualine_base16.insert.a.bg = colors.green
+lualine_base16.visual.a.bg = colors.violet
+lualine_base16.command = {
+  a = {
+    gui = "bold",
+    bg = colors.yellow,
+    fg = colors.black
+  }
+}
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'solarized_dark',
+    theme = lualine_base16,
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     disabled_filetypes = {}

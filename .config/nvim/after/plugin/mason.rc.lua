@@ -6,5 +6,22 @@ if not status2 then return end
 
 mason.setup({})
 lspconfig.setup({
-  ensure_installed = {}
+  ensure_installed = {
+    "tsserver",
+    "html",
+    "jsonls",
+    "jdtls",
+    "solargraph",
+    "ocamllsp",
+    "clangd",
+    "ember",
+    "eslint",
+    "emmet_ls",
+    "pyright",
+    "gopls",
+    "tailwindcss",
+    "sumneko_lua",
+    "yamlls"
+
+  }
 })
