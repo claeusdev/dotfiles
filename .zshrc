@@ -135,8 +135,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /Users/manakwadwoadjeimanu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/nanaadjeimanu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
