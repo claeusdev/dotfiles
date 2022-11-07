@@ -23,14 +23,13 @@ local on_attach = function(client, buffer)
   keymap.set("n", "gD", '<Cmd>lua vim.lsp.buf.declaration()<cr>', opts)
   keymap.set("n", "gi", '<Cmd>lua vim.lsp.buf.implementation()<cr>', opts)
   keymap.set("n", "rn", '<Cmd>Lspsaga rename<cr>', opts)
-  keymap.set("n", "<leader>o", '<Cmd>LSoutlineToggle<cr>', opts)
   keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
   keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap.set("n", "ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
   if client.name == "tsserver" then
-    keymap.set("n", "rf", ":TypescriptRenameFile<CR>")
-    keymap.set("n", "oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
-    keymap.set("n", "ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
+    keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>")
+    keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
+    keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
   end
 end
 

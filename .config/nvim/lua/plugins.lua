@@ -52,7 +52,9 @@ packer.startup(function(use)
   use "windwp/nvim-ts-autotag"
 
   use {
-    "nvim-treesitter/nvim-treesitter", run = ":TSUpdate"
+    "nvim-treesitter/nvim-treesitter", run = function ()
+     require("nvim-treesitter.install").update({ with_sync = true }) 
+    end
   }
 
   use "nvim-lua/plenary.nvim" -- Common Utilities
@@ -75,8 +77,9 @@ packer.startup(function(use)
   -- Golang
   use "fatih/vim-go"
 
-  -- Prettier
+  -- Prettier && formating
   use "jose-elias-alvarez/null-ls.nvim"
+  use "jayp0521/mason-null-ls.nvim"
   use "MunifTanjim/prettier.nvim"
 
   -- Git
